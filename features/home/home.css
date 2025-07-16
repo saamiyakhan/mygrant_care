@@ -16,6 +16,61 @@ h2, h3 {
   margin-left: 100px;
 }
 
+#scrolling {
+  width: 100%;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.feature-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.feature-block img {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.feature-text {
+  width: 50%;
+  padding: 10px;
+}
+
+.feature-text h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1a4ca4;
+}
+
+.feature-text h5 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Optional: Responsive design for mobile */
+@media (max-width: 768px) {
+  .feature-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-block img,
+  .feature-text {
+    width: 100%;
+  }
+}
+
+
 button {
   margin: 10px 10px 10px 100px;
   width: 120px;
