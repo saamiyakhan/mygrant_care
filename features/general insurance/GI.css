@@ -1,0 +1,58 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Page heading */
+h1 {
+  font-size: 2.5rem;
+  color: #2a4365;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  color: #4a5568;
+  max-width: 800px;
+}
+
+/* Section styles */
+div {
+  margin-bottom: 1.5rem;
+}
+
+/* Summary & details styling */
+details {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #cbd5e0;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.3s ease;
+}
+
+details:hover {
+  background-color: #f1f5f9;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+details[open] summary {
+  color: #2b6cb0;

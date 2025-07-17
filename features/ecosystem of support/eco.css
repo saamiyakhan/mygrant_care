@@ -1,0 +1,135 @@
+/* General page styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px 60px 20px;
+    line-height: 1.6;
+}
+
+/* Main page title */
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004a99;
+    font-weight: 700;
+}
+
+/* Section headings */
+h2 {
+    font-size: 1.9rem;
+    color: #0066cc;
+    border-bottom: 3px solid #cce0ff;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Each info block container */
+div[id^="L"], div[id^="F"], div[id^="Men"], div[id^="1"], div[id^="2"], div[id^="3"], div[id^="4"], div[id^="5"], div[id^="6"] {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 18px 25px;
+    margin-bottom: 18px;
+    transition: box-shadow 0.3s ease;
+}
+
+div[id^="L"]:hover,
+div[id^="F"]:hover,
+div[id^="Men"]:hover,
+div[id^="1"]:hover,
+div[id^="2"]:hover,
+div[id^="3"]:hover,
+div[id^="4"]:hover,
+div[id^="5"]:hover,
+div[id^="6"]:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Summary styling (the question/heading part) */
+summary {
+    font-weight: 600;
+    font-size: 1.15rem;
+    cursor: pointer;
+    padding: 5px 0;
+    color: #004a99;
+    list-style: none;
+    outline: none;
+}
+
+/* Remove default triangle from summary */
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::marker {
+    content: none;
+}
+
+/* Make the summary look clickable with custom arrow */
+summary::before {
+    content: '▶';
+    display: inline-block;
+    margin-right: 10px;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when open */
+details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+/* Paragraphs inside info blocks */
+p {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Links inside content */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* List items */
+li {
+    margin-bottom: 6px;
+}
+
+/* Nested links inside lists */
+ul li a {
+    font-weight: 500;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    body {
+        padding: 0 15px 40px 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
