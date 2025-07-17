@@ -1,73 +1,97 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="exp.css">
-    </head>
-    <body>
-        <h1>Social Experiences</h1>
-        <h4>Here are some social activities and classes that you can join, in your free time!</h4>
-        <table border="1px solid black">
-            <tr>
-                <th>Activity</th>
-                <th>Description</th>
-                <th>Sign Up Link</th>
-                <th>Date & Location</th>
-            </tr>
-            <tr>
-                <td> English Class</td>
-                <td> Learn to speak, understand, read and write in English for free in classes held weekly by the ItsRainingRaincoats organisation!</td>
-                <td> Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSez5G1e4ICZkGIp7Zh4puwZfOjZ_Fmc9pNQExImeDl0JOqmUw/viewform?usp=sf_link">here</a></td>
-                <td>Every Sunday, 1.5 hours at <a href="https://maps.app.goo.gl/aJesJLvqa1xKQW7d8">inspIRRe at 217 Henderson Rd, #03-07</a></td>
-            </tr>
-            <tr>
-                <td>Gardens By The Bay Tours</td>
-                <td>Go sight-seeing and tour gardens by the bay for free, organised by ItsRainingRaincoats</td>
-                <td>Check for open slots at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and sign up when a slot is open <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4KpP34jnBGEbjeFtLanFLgUcxl0wQbFYBXJbhSGaS7uNGXg/viewform?usp=sf_link">here</a></td>
-                <td>Check for available dates at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and the venue will be at <a href="https://maps.app.goo.gl/mdpS3gbrEzHrR38W6">Gardens By The Bay</a> </td>
-            </tr>
-            <tr>
-                <td>Mandai Zoo Tours</td>
-                <td>Go sight-seeing and tour the Singapore Zoo for free, organised by ItsRainingRaincoats</td>
-                <td>Check for open slots at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and sign up when a slot is open <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDzxtjoEvo3sF4vKofie4kqQ-EUIuDWbwYGC9XhfA-Ya8F4w/viewform?usp=sf_link">here</a></td>
-                <td>Check for available dates at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and the venue will be at <a href="https://maps.app.goo.gl/98tY2AYbmBFJVbhh9">Mandai Zoo</a> </td>
-            </tr>
-            <tr>
-                <td>Sports Facility Booking</td>
-                <td>Book sports facilities at MWC Recreation Hub or other Recreation Centres across Singapore.</td>
-                <td>
-                    MWC Hub: <a href="https://mwcrc.com/Account/Register">Register here</a><br>
-                    Other centres: <a href="https://www.mom.gov.sg/eservices/services/fwmomcare">Use FWMOMCare App</a>
-                </td>
-                <td>
-                    MWC: 51 Soon Lee Road, SG 628088<br>
-                    Tue-Fri: 9am-7pm, Sat-Sun: 11am-3pm<br>
-                    FWMOMCare: Various locations (see app)
-                </td>
-            </tr>
-            <tr>
-                <td>Arts in Me Facebook Group</td>
-                <td>Join a creative and expressive arts group where all languages are welcome</td>
-                <td><a href="https://www.facebook.com/groups/693814274723293">Join here</a></td>
-                <td>Online</td>
-            </tr>
-            <tr>
-                <td>Migrant Writers of Singapore</td>
-                <td>Annual poetry competition open to migrant writers in Singapore</td>
-                <td>-</td>
-                <td>Online</td>
-            </tr>
-            <tr>
-                <td>HealthServe Community Outreach</td>
-                <td>Join or receive free health screenings and community outreach organised by HealthServe</td>
-                <td>Call +65 31295000 for more info</td>
-                <td>1 Lor 23 Geylang, #01-06 Building #4, Singapore 388352<br>Depending on activity</td>
-            </tr>
-            <tr>
-                <td>AGWO Events & Workshops</td>
-                <td>Alliance of Guest Workers Outreach hosts events and workshops for migrant workers</td>
-                <td><a href="https://www.facebook.com/AGWOSG/">View Facebook page</a></td>
-                <td>Depending on activity</td>
-            </tr>
-            </tr>            
-        </table>
-    </body>
+  <head>
+    <link rel="stylesheet" href="exp.css" />
+  </head>
+  <body>
+    <script>
+        function toggleMenu() {
+        document.getElementById("sideMenu").classList.toggle("open");
+        }
+    </script>
+    <div class="menu-button" onclick="toggleMenu()">
+            &#9776;
+    </div>
+
+    <div class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="../general insurance/GI.html">General Insurance</a></li>
+            <li><a href="../injuries/inj.html">Injury / Health Issues</a></li>
+            <li><a href="../social experiences/exp.html">Social Experiences</a></li>
+            <li><a href="../worker rights/rights.html">Worker Rights</a></li>
+            <li><a href="../ecosystem of support/eco.html">Ecosystem of Support</a></li>
+        </ul>
+    </div>
+    <div class="container">
+      <h1>Social Experiences</h1>
+      <h4>Here are some social activities and classes that you can join, in your free time!</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Description</th>
+            <th>Sign Up Link</th>
+            <th>Date & Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>English Class</td>
+            <td>Learn to speak, understand, read and write in English for free in classes held weekly by the ItsRainingRaincoats organisation!</td>
+            <td>Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSez5G1e4ICZkGIp7Zh4puwZfOjZ_Fmc9pNQExImeDl0JOqmUw/viewform?usp=sf_link">here</a></td>
+            <td>Every Sunday, 1.5 hours at <a href="https://maps.app.goo.gl/aJesJLvqa1xKQW7d8">inspIRRe at 217 Henderson Rd, #03-07</a></td>
+          </tr>
+          <tr>
+            <td>Gardens By The Bay Tours</td>
+            <td>Go sight-seeing and tour gardens by the bay for free, organised by ItsRainingRaincoats</td>
+            <td>Check for open slots at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and sign up when a slot is open <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4KpP34jnBGEbjeFtLanFLgUcxl0wQbFYBXJbhSGaS7uNGXg/viewform?usp=sf_link">here</a></td>
+            <td>Check for available dates at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and the venue will be at <a href="https://maps.app.goo.gl/mdpS3gbrEzHrR38W6">Gardens By The Bay</a></td>
+          </tr>
+          <tr>
+            <td>Mandai Zoo Tours</td>
+            <td>Go sight-seeing and tour the Singapore Zoo for free, organised by ItsRainingRaincoats</td>
+            <td>Check for open slots at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and sign up when a slot is open <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDzxtjoEvo3sF4vKofie4kqQ-EUIuDWbwYGC9XhfA-Ya8F4w/viewform?usp=sf_link">here</a></td>
+            <td>Check for available dates at <a href="https://www.facebook.com/itsrainingraincoats/">this facebook page</a> and the venue will be at <a href="https://maps.app.goo.gl/98tY2AYbmBFJVbhh9">Mandai Zoo</a></td>
+          </tr>
+          <tr>
+            <td>Sports Facility Booking</td>
+            <td>Book sports facilities at MWC Recreation Hub or other Recreation Centres across Singapore.</td>
+            <td>
+              MWC Hub: <a href="https://mwcrc.com/Account/Register">Register here</a><br />
+              Other centres: <a href="https://www.mom.gov.sg/eservices/services/fwmomcare">Use FWMOMCare App</a>
+            </td>
+            <td>
+              MWC: 51 Soon Lee Road, SG 628088<br />
+              Tue-Fri: 9am-7pm, Sat-Sun: 11am-3pm<br />
+              FWMOMCare: Various locations (see app)
+            </td>
+          </tr>
+          <tr>
+            <td>Arts in Me Facebook Group</td>
+            <td>Join a creative and expressive arts group where all languages are welcome</td>
+            <td><a href="https://www.facebook.com/groups/693814274723293">Join here</a></td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Migrant Writers of Singapore</td>
+            <td>Annual poetry competition open to migrant writers in Singapore</td>
+            <td>-</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>HealthServe Community Outreach</td>
+            <td>Join or receive free health screenings and community outreach organised by HealthServe</td>
+            <td>Call +65 31295000 for more info</td>
+            <td>1 Lor 23 Geylang, #01-06 Building #4, Singapore 388352<br />Depending on activity</td>
+          </tr>
+          <tr>
+            <td>AGWO Events & Workshops</td>
+            <td>Alliance of Guest Workers Outreach hosts events and workshops for migrant workers</td>
+            <td><a href="https://www.facebook.com/AGWOSG/">View Facebook page</a></td>
+            <td>Depending on activity</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>

@@ -3,22 +3,51 @@
         <link rel="stylesheet" href="rights.css">
     </head>
     <body>
+        <script>
+            function toggleMenu() {
+            document.getElementById("sideMenu").classList.toggle("open");
+            }
+        </script>
+        <div class="menu-button" onclick="toggleMenu()">
+                &#9776;
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../general insurance/GI.html">General Insurance</a></li>
+                <li><a href="../injuries/inj.html">Injury / Health Issues</a></li>
+                <li><a href="../social experiences/exp.html">Social Experiences</a></li>
+                <li><a href="../worker rights/rights.html">Worker Rights</a></li>
+                <li><a href="../ecosystem of support/eco.html">Ecosystem of Support</a></li>
+            </ul>
+        </div>
+<div class="content">
         <h1>Worker Rights</h1>
         <h4>This section serves as a reminder to always keep your rights in mind and to stand up for yourself when necessary.</h4>
-        <br>
-        <h4>Below are the forms to fill if you have any issues you want to raise to MOM. Either refer to <a href="https://www.mom.gov.sg/eservices/services/report-an-infringement">this MOM website </a>or access the direct links below</h4>
-        <ul>
-            <li><a href="https://www.mom.gov.sg/eservices/services/report-an-employment-act-violation">Report an employment act violation</a></li>
-            <li><a href="https://form.gov.sg/64e5c3b5ea7cf100128600c2">Potential offences relating to pay, sick leave, etc.</a></li>
-            <li><a href="https://form.gov.sg/65531e8e41e58a00115330eb">Housing issues for migrant workers relating to compromised safety, wellbeing, etc.</a></li>
-            <li><a href="https://form.gov.sg/64e5cb37f8c88e0012480ed1">Infringements related to employment agencies</a></li>
-            <li><a href="https://form.gov.sg/64e5dda9f8c88e00124ba0d8">Suspected labour trafficking</a></li>
-            <li><a href="https://form.gov.sg/65718715a340b400131b241c">Workplace safety and health violations or lapses</a></li>
-        </ul>
-        <h5>Pay & Leave rights:
-- Migrant construction workers are entitled to up to 60 days of paid hospitalisation leave annually, per the Employment Act.
-- Any medical leave certified by a doctor—whether from workplace injury or illness—must be paid, up to the statutory maximum (hospitalisation leave limit) .
-- Workers can take up to 60 calendar days of overseas leave with levy waiver annually, provided each trip is at least 7 consecutive days. Employers must hold the worker’s passport, work permit, and copy of ticket
-</h5>
-    </body>
+
+        <div class="card">
+            <h4>If you face any issues, you can raise them with MOM.</h4>
+            <p>Refer to the <a href="https://www.mom.gov.sg/eservices/services/report-an-infringement" target="_blank">main MOM website</a> or use the direct forms below:</p>
+            <ul>
+                <li><a href="https://www.mom.gov.sg/eservices/services/report-an-employment-act-violation" target="_blank">Report an Employment Act violation</a></li>
+                <li><a href="https://form.gov.sg/64e5c3b5ea7cf100128600c2" target="_blank">Offences relating to pay, sick leave, etc.</a></li>
+                <li><a href="https://form.gov.sg/65531e8e41e58a00115330eb" target="_blank">Housing issues (safety/wellbeing)</a></li>
+                <li><a href="https://form.gov.sg/64e5cb37f8c88e0012480ed1" target="_blank">Employment agency infringements</a></li>
+                <li><a href="https://form.gov.sg/64e5dda9f8c88e00124ba0d8" target="_blank">Suspected labour trafficking</a></li>
+                <li><a href="https://form.gov.sg/65718715a340b400131b241c" target="_blank">Workplace safety or health lapses</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h4>Pay & Leave Rights</h4>
+            <ul>
+                <li>Construction workers are entitled to up to <strong>60 days of paid hospitalisation leave</strong> annually (under the Employment Act).</li>
+                <li><strong>Medical leave must be paid</strong> if certified by a doctor—whether for injury or illness—up to the statutory limit.</li>
+                <li>You may take <strong>up to 60 days of overseas leave</strong> per year (with levy waiver), if each trip is at least 7 days long.</li>
+                <li>Employers are required to <strong>retain your passport, work permit, and ticket copy</strong> during overseas leave.</li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
