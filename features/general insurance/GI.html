@@ -1,10 +1,29 @@
 <html>
-    <link rel="stylesheet" href="GI.css"></link>
     <head>
-        <h1>General Insurance</h1>
-        <h3>Understanding your medical insurance shouldn't be confusing. This section is here to help you know exactly what you're entitled to when it comes to healthcare and hospital coverage.</h3>
+        <link rel="stylesheet" href="GI.css"></link>
     </head>
     <body>
+        <h1>General Insurance</h1>
+        <h3>Understanding your medical insurance shouldn't be confusing. This section is here to help you know exactly what you're entitled to when it comes to healthcare and hospital coverage.</h3>
+        <script>
+            function toggleMenu() {
+            document.getElementById("sideMenu").classList.toggle("open");
+            }
+        </script>
+        <div class="menu-button" onclick="toggleMenu()">
+                &#9776;
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../general insurance/GI.html">General Insurance</a></li>
+                <li><a href="../injuries/inj.html">Injury / Health Issues</a></li>
+                <li><a href="../social experiences/exp.html">Social Experiences</a></li>
+                <li><a href="../worker rights/rights.html">Worker Rights</a></li>
+                <li><a href="../ecosystem of support/eco.html">Ecosystem of Support</a></li>
+            </ul>
+        </div>
         <div id="1">
         <details>
             

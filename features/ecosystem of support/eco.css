@@ -9,6 +9,79 @@ body {
     line-height: 1.6;
 }
 
+/* Menu Button */
+.menu-button {
+  font-size: 32px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  cursor: pointer;
+  color: #ffffff;
+  background: #2a4e80;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menu-button:hover {
+  background: #3b6ccc;
+  color: #e0e7ff;
+}
+
+/* Side Menu (slides from right, half screen) */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -50%; /* hide off screen to the right */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to bottom, #2a4e80, #1e3a63);
+  z-index: 1000;
+  padding-top: 80px;
+  transition: left 0.3s ease-in-out;
+  box-shadow: -4px 0 16px rgba(0,0,0,0.3);
+  overflow-y: auto;
+}
+
+.side-menu.open {
+  left: 0; /* slide in */
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.side-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.side-menu a:hover {
+  background-color: rgba(255,255,255,0.15);
+  padding-left: 20px;
+  font-weight: 600;
+}
+.main-content {
+  padding: 20px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+
 /* Main page title */
 h1 {
     font-size: 2.8rem;
